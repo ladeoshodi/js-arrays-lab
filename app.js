@@ -256,3 +256,18 @@ numArrays.forEach((numList) => {
 });
 
 console.log("Exercise 15 result:\n", total);
+
+// Extra Question 1 🚀
+// Write a function checkExists that checks if an element exists in an array. It should return true if the element exists, and false otherwise
+// e.g. checkExists(10, [1, 3, 6, 10, 11]) -> returns true
+// e.g. checkExists("hello", ["bye", "cya", "so long"]) -> returns false
+
+function checkExists(element, array) {
+  return array.includes(element);
+}
+
+console.log("Extra Question 1:", checkExists(10, [1, 3, 6, 10, 11]));
+console.log(
+  "Extra Question 1:",
+  checkExists("hello", ["bye", "cya", "so long"])
+);
