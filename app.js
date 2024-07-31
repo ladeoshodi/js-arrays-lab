@@ -281,3 +281,17 @@ function reverseString(word) {
 }
 
 console.log("Extra Question 2:", reverseString("hello"));
+
+// Extra Question 3 🚀
+// Write a function isPalindrome that returns true if the given string is a palindrome, false otherwise. A palindrome is a string, that when reversed, is the same string.
+// e.g. reverseString('radar') -> true
+// e.g. reverseString('sos') -> true
+// e.g. reverseString('zombie') -> false
+
+function isPalindrome(word) {
+  return word === reverseString(word);
+}
+
+console.log("Extra Question 3:", isPalindrome("radar"));
+console.log("Extra Question 3:", isPalindrome("sos"));
+console.log("Extra Question 3:", isPalindrome("zombie"));
