@@ -271,3 +271,13 @@ console.log(
   "Extra Question 1:",
   checkExists("hello", ["bye", "cya", "so long"])
 );
+
+// Extra Question 2 🚀
+// Write a function reverseString, that reverses the string provided and returns it:
+// e.g. reverseString("hello").-> olleh
+
+function reverseString(word) {
+  return word.split("").reverse().join("");
+}
+
+console.log("Extra Question 2:", reverseString("hello"));
