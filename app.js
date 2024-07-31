@@ -295,3 +295,33 @@ function isPalindrome(word) {
 console.log("Extra Question 3:", isPalindrome("radar"));
 console.log("Extra Question 3:", isPalindrome("sos"));
 console.log("Extra Question 3:", isPalindrome("zombie"));
+
+// Extra Question 4 🚀
+// Write a function isSubsequence(array, subsequence) that returns true if one array is a subsequence of another array, otherwise false.
+// A subsequence has the same order of numbers that appear in the first array, but not necessarily all of the same numbers.
+// e.g. array = [1, 2, -1, 5, 10, 100]
+// [2, 5] is a subsequence here, so is [1, 2, 10].
+// [0, 1] is not a subsequence, 0 does not appear in the array.
+// [2, 1] is not a subsequence. Both elements appear but in the wrong order.
+// The empty array [] is always a subsequence
+
+function isSubsequence(array, subsequence) {
+  let compareIndex = -1;
+  for (let elem of subsequence) {
+    if (array.indexOf(elem) > compareIndex) {
+      compareIndex = array.indexOf(elem);
+    } else {
+      return false;
+    }
+  }
+  return true;
+}
+
+console.log("Extra Question 4:", isSubsequence([1, 2, -1, 5, 10, 100], [2, 5]));
+console.log(
+  "Extra Question 4:",
+  isSubsequence([1, 2, -1, 5, 10, 100], [1, 2, 10])
+);
+console.log("Extra Question 4:", isSubsequence([1, 2, -1, 5, 10, 100], [0, 1]));
+console.log("Extra Question 4:", isSubsequence([1, 2, -1, 5, 10, 100], [2, 1]));
+console.log("Extra Question 4:", isSubsequence([1, 2, -1, 5, 10, 100], []));
