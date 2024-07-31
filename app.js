@@ -151,9 +151,7 @@ Complete Exercise 11 in the space below:
 */
 
 const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
-const odds = [];
-
-nums.forEach((num) => odds.push(num));
+const odds = nums.filter((num) => num % 2 !== 0);
 
 console.log("Exercise 11 result:", odds);
 
